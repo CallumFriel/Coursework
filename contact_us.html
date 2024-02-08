@@ -8,9 +8,43 @@
             <h1>The Tank Society</h1>
         </header>
 
-        <nav> </nav>
+        <nav> 
+            <ul>
+                <li><a href = 'index.html'>Home</a></li>
+                <li><a href = 'img_gallery.html'>Gallery</a></li>
+                <li><a href = 'current_members.html'>Current Members</a></li>
+                <li><a href = 'event_calender.html'>Events</a></li>
+                <li><a href = 'contact_us.html'>Contact Us</a></li>
+            </ul>
+        </nav>
 
-        <main> </main>
+        <main> 
+            <div>
+                <form>
+                    <fieldset>
+                        <legend>You may contact us by using the form provided below!</legend>
+
+                        <label for = "name">Name:</label>
+                        <input type = "text" name = "name" value = ""/> <br/>
+
+                        <label for = "email">Email:</label>
+                        <input type = "text" name = "email" value = ""/> <br/>
+
+                        <label for = "membership">What is your membership status:</label><br/>
+                        <label for = "member">Member</label>
+                        <input type = "radio" id = "member" name = "membership" value = "member">
+                        <label for = "non-member">Non-member</label>
+                        <input type = "radio" id = "non-member" name = "membership" value = "non-member"> <br/>
+
+                        <label for = "message">Message to send:</label> <br/>
+                        <textarea name = "message" cols = "50" rows = "7"></textarea> <br/>
+
+                        <label for = "attachment">Please provide any needed attachments:</label>
+                        <input type = "file" id = "fileUploaded" name = "attachment">
+                    </fieldset>
+                </form>
+            </div>
+        </main>
 
         <aside> </aside>
 
