@@ -1,0 +1,87 @@
+body{
+    background-color: green;
+}
+
+header{
+    background-color: white;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+h1, h2, h3, h4, h5, h6, p{
+    color: blue;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+h1{
+    font-size: 40px;
+}
+
+h3{
+    font-size: 25px;
+}
+
+p{
+    font-size: 15px;
+}
+
+main{
+    background-color: white;
+    border-radius: 10px;
+}
+
+aside{
+    background-color: white;
+    border-radius: 10px;
+}
+
+footer{
+    background-color: red;
+    border-radius: 10px;
+}
+
+nav li{
+    border: 2px;
+    border-color: yellow;
+    border-style: solid;
+    background-color: red;
+    list-style-type: none;
+}
+
+nav li a{
+    color: white;
+    text-align: center;
+    text-decoration: none;
+}
+
+nav li:hover{
+    background-color: black;
+}
+
+.active{
+    background-color: purple;
+}
+
+table{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border-collapse: collapse;
+}
+
+table td, table th{
+    border: 2px;
+    border-color: #F0F0F0;
+    border-style: solid;
+}
+
+table tr:nth-child(even){
+    background-color: #F2F2F2;
+}
+
+table tr:hover{
+    background-color: green;
+}
+
+table th{
+    background-color: red;
+    color: white;
+}
