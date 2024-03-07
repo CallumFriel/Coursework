@@ -7,6 +7,9 @@ header{
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     padding: 10px;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 #logo{
@@ -39,17 +42,23 @@ p{
 main{
     background-color: white;
     border-radius: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 aside{
     background-color: white;
     border-radius: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 nav ul{
     margin: 0px;
     padding: 0px;
     overflow: hidden;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 nav li{
@@ -123,6 +132,7 @@ input{
 footer{
     background-color: red;
     border-radius: 10px;
+    margin: 10px;
 }
 
 #row{
@@ -131,4 +141,9 @@ footer{
 
 .twitter-timeline{
     margin: auto;
+}
+
+.carousel-inner > .carousel-item > img{
+    height: 300px;
+    width: 200px;
 }
