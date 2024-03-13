@@ -147,3 +147,15 @@ footer{
     height: 300px;
     width: 200px;
 }
+
+.gallery-img{
+    width: 100%;
+}
+
+#img-gallery{
+    padding-top: 10px;
+}
+
+#img-gallery .row{
+    margin-bottom: 10px;
+}
