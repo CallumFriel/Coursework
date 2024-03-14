@@ -12,6 +12,26 @@
         <header>
             <img id="logo" src = "Images/logo.webp" alt = "The logo of the site which is a silhoutte of a tank"/>
             <h1 id="header">The Tank Society</h1>
+            <form id = "login">
+                <fieldset>
+                    <input type = "text" name = "email" placeholder = "Email"/>
+                    <input type = "text" name = "password" placeholder = "Password"/>
+                    <button type = "button" onclick = "login()">Login</button>
+
+                    <script>
+                        var counter = 2;
+
+                        function login(){
+                            if(counter % 2 == 0){
+                                alert('You have been logged in!')
+                            }else{
+                                alert('You have been logged out!')
+                            }
+                            counter += 1;
+                        }
+                    </script>
+                </fieldset>
+            </form>
         </header>
 
         <nav> 

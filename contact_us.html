@@ -44,9 +44,21 @@
                         <textarea name = "message" cols = "50" rows = "7"></textarea> <br/>
 
                         <label for = "attachment">Please provide any needed attachments:</label>
-                        <input type = "file" id = "fileUploaded" name = "attachment">
+                        <input type = "file" id = "fileUploaded" name = "attachment"><br/>
+
+                        <button type = "button" onclick = 'send_form("form_outcome", "Form has been sent successfully!")'>Submit</button>
+
+                        <script>
+                            function send_form(id, content){
+                                var container = document.getElementById(id);
+                                container.innerHTML = content;
+                            }
+                        </script>
                     </fieldset>
                 </form>
+                <div>
+                    <p id = "form_outcome"></p>
+                </div>
             </div>
 
             <div id="right-col">

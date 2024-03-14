@@ -159,3 +159,8 @@ footer{
 #img-gallery .row{
     margin-bottom: 10px;
 }
+
+#login{
+    float: right;
+    display: inline;
+}

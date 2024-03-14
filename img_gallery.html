@@ -28,41 +28,51 @@
             <div id = "img-gallery" class = "container">
                 <div class = "row">
                     <div class = "col-sm">
-                        <img src = "Images/Centurion.jpg" alt = "An image of a Centurion tank" class = "container"/>
+                        <img src = "Images/Centurion.jpg" alt = "An image of a Centurion tank" class = "container" id = "img-gallery1" onmouseover="highlight(this)" onmouseout="delight(this)" onmouseover="deblur(this)"/>
                     </div>
                     <div class = "col-sm">
-                        <img src = "Images/Challenger2.jpg" alt = "An image of a Chellenger 2 main battle tank" class = "container"/>
+                        <img src = "Images/Challenger2.jpg" alt = "An image of a Chellenger 2 main battle tank" class = "container" id = "img-gallery1" onmouseover="highlight(this)" onmouseout="delight(this)" onmouseover="deblur(this)"/>
                     </div>
                     <div class = "col-sm">
-                        <img src = "Images/Leopard2A5.jpg" alt = "An image of a Leopard 2A5 tank" class = "container"/>
-                    </div>
-                </div>
-
-                <div class = "row">
-                    <div class = "col-sm">
-                        <img src = "Images/M1Abrams.jpg" alt = "An image of an M1 Abrams tank" class = "container"/>
-                    </div>
-                    <div class = "col-sm">
-                        <img src = "Images/M4Sherman.jpg" alt = "An image of an M4 Sherman tank" class = "container"/>
-                    </div>
-                    <div class = "col-sm">
-                        <img src = "Images/PanzerIV.jpg" alt = "An image of a Panzer IV tank" class = "container"/>
+                        <img src = "Images/Leopard2A5.jpg" alt = "An image of a Leopard 2A5 tank" class = "container" id = "img-gallery1" onmouseover="highlight(this)" onmouseout="delight(this)" onmouseover="deblur(this)"/>
                     </div>
                 </div>
 
                 <div class = "row">
                     <div class = "col-sm">
-                        <img src = "Images/T34.jpg" alt = "An image of a T-34 tank" class = "container"/>
+                        <img src = "Images/M1Abrams.jpg" alt = "An image of an M1 Abrams tank" class = "container" id = "img-gallery1" onmouseover="highlight(this)" onmouseout="delight(this)"/>
                     </div>
                     <div class = "col-sm">
-                        <img src = "Images/T72.jpg" alt = "An image of a T-72 tank" class = "container"/>
+                        <img src = "Images/M4Sherman.jpg" alt = "An image of an M4 Sherman tank" class = "container" id = "img-gallery1" onmouseover="highlight(this)" onmouseout="delight(this)" onmouseover="deblur(this)"/>
                     </div>
                     <div class = "col-sm">
-                        <img src = "Images/Tiger1.webp" alt = "An image of a Tiger 1 tank" class = "container"/>
+                        <img src = "Images/PanzerIV.jpg" alt = "An image of a Panzer IV tank" class = "container" id = "img-gallery1" onmouseover="highlight(this)" onmouseout="delight(this)" onmouseover="deblur(this)"/>
+                    </div>
+                </div>
+
+                <div class = "row">
+                    <div class = "col-sm">
+                        <img src = "Images/T34.jpg" alt = "An image of a T-34 tank" class = "container" id = "img-gallery1" onmouseover="highlight(this)" onmouseout="delight(this)"/>
+                    </div>
+                    <div class = "col-sm">
+                        <img src = "Images/T72.jpg" alt = "An image of a T-72 tank" class = "container" id = "img-gallery1" onmouseover="highlight(this)" onmouseout="delight(this)"/>
+                    </div>
+                    <div class = "col-sm">
+                        <img src = "Images/Tiger1.webp" alt = "An image of a Tiger 1 tank" class = "container" id = "img-gallery1" onmouseover="highlight(this)" onmouseout="delight(this)"/>
                     </div>
                 </div>
             </div>
         </main>
+
+        <script>
+            function highlight(x){
+                    x.style = "border: solid blue 2px;"
+            }
+            
+            function delight(x){
+                    x.style = "border: none;"
+            }
+        </script>
 
         <aside> </aside>
 
