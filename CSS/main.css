@@ -1,7 +1,9 @@
+/*Body style*/
 body{
     background-color: green;
 }
 
+/*Header style*/
 header{
     background-color: white;
     border-top-left-radius: 10px;
@@ -12,33 +14,40 @@ header{
     margin-right: 10px;
 }
 
+/*Logo*/
 #logo{
     height: 50px;
     width: 50px;
     margin-right: 10px;
 }
 
+/*Title style*/
 #header{
     display: inline;
 }
 
+/*Styles all header and paragraph text*/
 h1, h2, h3, h4, h5, h6, p{
     color: blue;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
+/*Sizes all h1 text*/
 h1{
     font-size: 40px;
 }
 
+/*Sizes all h3 text*/
 h3{
     font-size: 25px;
 }
 
+/*Sizes all paragraph text*/
 p{
     font-size: 15px;
 }
 
+/*Styles all "main" tags*/
 main{
     background-color: white;
     border-radius: 10px;
@@ -46,6 +55,7 @@ main{
     margin-right: 10px;
 }
 
+/*Styles all "aside" tags*/
 aside{
     background-color: white;
     border-radius: 10px;
@@ -53,6 +63,7 @@ aside{
     margin-right: 10px;
 }
 
+/*Styles the general navigation bar*/
 nav ul{
     margin: 0px;
     padding: 0px;
@@ -61,6 +72,7 @@ nav ul{
     margin-right: 10px;
 }
 
+/*Stles each box of the navigation bar*/
 nav li{
     border: 2px;
     border-color: yellow;
@@ -72,94 +84,114 @@ nav li{
     padding: 16px;
 }
 
+/*Styles link text*/
 nav li a{
     color: white;
     text-decoration: none;
 }
 
+/*Styles when mouse is hovering over navigation box*/
 nav li:hover{
     background-color: black;
 }
 
+/*Styles when mouse is not hovering over navigation box*/
 .active{
     background-color: purple;
 }
 
+/*Styles the general table for events*/
 table{
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     border-collapse: collapse;
 }
 
+/*Styles each row*/
 table td, table th{
     border: 2px;
     border-color: #F0F0F0;
     border-style: solid;
 }
 
+/*cHANGES THE COLOUR OF EVERY OTHER ROW*/
 table tr:nth-child(even){
     background-color: #F2F2F2;
 }
 
+/*Changes the colour when mouse hovers over each row*/
 table tr:hover{
     background-color: green;
 }
 
+/*Styles the top row and the most right column*/
 table th{
     background-color: red;
     color: white;
 }
 
+/*Styles the field sets*/
 fieldset{
     border-style: solid;
     margin: 30px;
 }
 
+/*Styles the input button*/
 input{
     margin: 10px;
 }
 
+/*Styles the left side of the page*/
 #left-col{
     float: left;
     width: 50%;
 }
 
+/*Styles the right side of the page*/
 #right-col{
     float: left;
     width: 50%;
     margin-top: 30px;
 }
 
+/*Styles teh footer of the page*/
 footer{
     background-color: red;
     border-radius: 10px;
     margin: 10px;
 }
 
+/*Styles the row ofthe image gallery*/
 #row{
     height: 575px;
 }
 
+/*Styles the twitter timeline on the page*/
 .twitter-timeline{
     margin: auto;
 }
 
+/*Sets each image to be a certain size in the carousel*/
 .carousel-inner > .carousel-item > img{
     height: 300px;
     width: 200px;
 }
 
+/*Sets the gallery-img class*/
 .gallery-img{
     width: 100%;
 }
 
+/*Styles the entire gallery div*/
 #img-gallery{
     padding-top: 10px;
 }
 
+/*Syles each row in the image gallery*/
 #img-gallery .row{
     margin-bottom: 10px;
 }
 
+/*styles the login area*/
 #login{
     float: right;
     display: inline;

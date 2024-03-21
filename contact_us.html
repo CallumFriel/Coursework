@@ -6,10 +6,14 @@
 
     <body>
         <header>
+
+            <!--The website logo and title-->
             <img id="logo" src = "Images/logo.webp" alt = "The logo of the site which is a silhoutte of a tank"/>
             <h1 id="header">The Tank Society</h1>
+
         </header>
 
+        <!--Navigation bar to go between pages-->
         <nav> 
             <ul>
                 <li class = "active"><a href = 'index.html'>Home</a></li>
@@ -22,33 +26,50 @@
 
         <main id="row"> 
             
+            <!--Input form-->
             <div id="left-col">
+
+                <!--Form title-->
                 <h3>Contact Us</h3>
                 <form>
                     <fieldset>
+
+                        <!--Form description-->
                         <legend>You may contact us by using the form provided below!</legend>
 
+                        <!--Name input-->
                         <label for = "name">Name:</label>
                         <input type = "text" name = "name" value = ""/> <br/>
 
+                        <!--Email input-->
                         <label for = "email">Email:</label>
                         <input type = "text" name = "email" value = ""/> <br/>
 
+                        <!--Selection for membership status-->
                         <label for = "membership">What is your membership status:</label><br/>
+
+                        <!--Member radio button-->
                         <label for = "member">Member</label>
                         <input type = "radio" id = "member" name = "membership" value = "member">
+
+                        <!--Non-member radio button-->
                         <label for = "non-member">Non-member</label>
                         <input type = "radio" id = "non-member" name = "membership" value = "non-member"> <br/>
 
+                        <!--Input box for message-->
                         <label for = "message">Message to send:</label> <br/>
                         <textarea name = "message" cols = "50" rows = "7"></textarea> <br/>
 
+                        <!--File upload-->
                         <label for = "attachment">Please provide any needed attachments:</label>
                         <input type = "file" id = "fileUploaded" name = "attachment"><br/>
 
                         <button type = "button" onclick = 'send_form("form_outcome", "Form has been sent successfully!")'>Submit</button>
 
+                        <!--Script to proccess input from form-->
                         <script>
+
+                            //Function to print out a message when the form has been submitted
                             function send_form(id, content){
                                 var container = document.getElementById(id);
                                 container.innerHTML = content;
@@ -56,11 +77,14 @@
                         </script>
                     </fieldset>
                 </form>
+
+                <!--Where the scripts output is placed-->
                 <div>
                     <p id = "form_outcome"></p>
                 </div>
             </div>
 
+            <!--Adds a twitter timline to the page-->
             <div id="right-col">
                 <a class="twitter-timeline" data-width="400" data-height="500" data-dnt="true" data-theme="dark" href="https://twitter.com/worldoftanks?ref_src=twsrc%5Etfw">Tweets by worldoftanks</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
             </div>
@@ -68,7 +92,8 @@
 
         <aside> </aside>
 
-        <footer> 
+        <footer>
+            <!--Copyright notice-->
             <p>Copyright Callum Friel</p>
         </footer>
     </body>

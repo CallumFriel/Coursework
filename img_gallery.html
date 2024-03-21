@@ -10,10 +10,13 @@
 
     <body>
         <header>
+
+            <!--The website logo and title-->
             <img id="logo" src = "Images/logo.webp" alt = "The logo of the site which is a silhoutte of a tank"/>
             <h1 id="header">The Tank Society</h1>
         </header>
 
+        <!--Navigation bar to go between pages-->
         <nav> 
             <ul>
                 <li class = "active"><a href = 'index.html'>Home</a></li>
@@ -24,39 +27,62 @@
             </ul>
         </nav>
 
-        <main> 
+        <main>
+            <!--Image gallery-->
             <div id = "img-gallery" class = "container">
+                
+                <!--First row of image gallery-->
                 <div class = "row">
+
+                    <!--First image of the row-->
                     <div class = "col-sm">
                         <img src = "Images/Centurion.jpg" alt = "An image of a Centurion tank" class = "container" id = "img-gallery1" onmouseover="highlight(this)" onmouseout="delight(this)" onmouseover="deblur(this)"/>
                     </div>
+
+                    <!--Second image of the row-->
                     <div class = "col-sm">
                         <img src = "Images/Challenger2.jpg" alt = "An image of a Chellenger 2 main battle tank" class = "container" id = "img-gallery1" onmouseover="highlight(this)" onmouseout="delight(this)" onmouseover="deblur(this)"/>
                     </div>
+
+                    <!--Third image of the row-->
                     <div class = "col-sm">
                         <img src = "Images/Leopard2A5.jpg" alt = "An image of a Leopard 2A5 tank" class = "container" id = "img-gallery1" onmouseover="highlight(this)" onmouseout="delight(this)" onmouseover="deblur(this)"/>
                     </div>
                 </div>
 
+                <!--Second row of image gallery-->
                 <div class = "row">
+
+                    <!--First image of the row-->
                     <div class = "col-sm">
                         <img src = "Images/M1Abrams.jpg" alt = "An image of an M1 Abrams tank" class = "container" id = "img-gallery1" onmouseover="highlight(this)" onmouseout="delight(this)"/>
                     </div>
+
+                    <!--Second image of the row-->
                     <div class = "col-sm">
                         <img src = "Images/M4Sherman.jpg" alt = "An image of an M4 Sherman tank" class = "container" id = "img-gallery1" onmouseover="highlight(this)" onmouseout="delight(this)" onmouseover="deblur(this)"/>
                     </div>
+
+                    <!--Third image of the row-->
                     <div class = "col-sm">
                         <img src = "Images/PanzerIV.jpg" alt = "An image of a Panzer IV tank" class = "container" id = "img-gallery1" onmouseover="highlight(this)" onmouseout="delight(this)" onmouseover="deblur(this)"/>
                     </div>
                 </div>
 
+                <!--Third row of image gallery-->
                 <div class = "row">
+
+                    <!--First image of the row-->
                     <div class = "col-sm">
                         <img src = "Images/T34.jpg" alt = "An image of a T-34 tank" class = "container" id = "img-gallery1" onmouseover="highlight(this)" onmouseout="delight(this)"/>
                     </div>
+
+                    <!--Second image of the row-->
                     <div class = "col-sm">
                         <img src = "Images/T72.jpg" alt = "An image of a T-72 tank" class = "container" id = "img-gallery1" onmouseover="highlight(this)" onmouseout="delight(this)"/>
                     </div>
+
+                    <!--Third image of the row-->
                     <div class = "col-sm">
                         <img src = "Images/Tiger1.webp" alt = "An image of a Tiger 1 tank" class = "container" id = "img-gallery1" onmouseover="highlight(this)" onmouseout="delight(this)"/>
                     </div>
@@ -64,11 +90,15 @@
             </div>
         </main>
 
+        <!--Script that will alter images in gallery-->
         <script>
+
+            //Function that will add border around image when mouse hovers over
             function highlight(x){
                     x.style = "border: solid blue 2px;"
             }
             
+            //Function that removes the border when mouse stops hovering over the image
             function delight(x){
                     x.style = "border: none;"
             }
@@ -76,7 +106,8 @@
 
         <aside> </aside>
 
-        <footer> 
+        <footer>
+            <!--Copyright notice-->
             <p>Copyright Callum Friel</p>
         </footer>
     </body>

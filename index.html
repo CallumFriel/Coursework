@@ -10,30 +10,22 @@
 
     <body>
         <header>
+
+            <!--The website logo and title-->
             <img id="logo" src = "Images/logo.webp" alt = "The logo of the site which is a silhoutte of a tank"/>
             <h1 id="header">The Tank Society</h1>
-            <form id = "login">
-                <fieldset>
-                    <input type = "text" name = "email" placeholder = "Email"/>
-                    <input type = "text" name = "password" placeholder = "Password"/>
+
+            <!--Form for logging in-->
+            <div id = "login">
+                <form>
+                    <input type = "email" placeholder = "Email"/>
+                    <input type = "password" placeholder = "Password"/>
                     <button type = "button" onclick = "login()">Login</button>
-
-                    <script>
-                        var counter = 2;
-
-                        function login(){
-                            if(counter % 2 == 0){
-                                alert('You have been logged in!')
-                            }else{
-                                alert('You have been logged out!')
-                            }
-                            counter += 1;
-                        }
-                    </script>
-                </fieldset>
-            </form>
+                </form>
+            </div>
         </header>
 
+        <!--Navigation bar to go between pages-->
         <nav> 
             <ul>
                 <li class = "active"><a href = 'index.html'>Home</a></li>
@@ -46,7 +38,10 @@
 
         <main> 
             <div>
+                <!--A welcome message for the website-->
                 <h3>Welcome to our society all about tanks!</h3>
+
+                <!--Short introduction to the tank society-->
                 <div>
                     <p>Welcome to the The Tank Society! Prepare to embark on an exciting journey into the world of armored vehicles and military history. 
                         Whether you're a seasoned tank aficionado or just curious about these steel behemoths, our society is the perfect place to share your passion, learn, 
@@ -54,8 +49,10 @@
                         Tank you for joining us on this epic adventure! let's roll into a semester of excitement together!</p>
                 </div>
 
+                <!--Carousel of images-->
                 <div id = "home-carousel" class = "carousel slide" data-bs-ride = "carousel">
 
+                    <!--Indicator of which image is being seen-->
                     <div class = "carousel-indicators">
                         <button type = "button" data-bs-target = "#home-carousel" data-bs-slide-to = "0" class = "active" aria-current = "true" aria-label = "Slide 1"></button>
                         <button type = "button" data-bs-target = "#home-carousel" data-bs-slide-to = "1" aria-current = "true" aria-label = "Slide 2"></button>
@@ -64,50 +61,76 @@
 
                     <div class = "carousel-inner">
 
+                        <!--First image of the carousel-->
                         <div class = "carousel-item active">
-                            <img class = "d-block w-100" src = "images/Leopard2A5.jpg">
+                            <img class = "d-block w-100" src = "images/Leopard2A5.jpg" alt="Image of a Leopard 2 tank">
+
                             <div class = "carousel-caption d-none d-md-block">
                                 <h5>Leopard 2</h5>
                             </div>
                         </div>
 
+                        <!--Second image of the carousel-->
                         <div class = "carousel-item">
-                            <img class = "d-block w-100" src = "images/Centurion.jpg">
+                            <img class = "d-block w-100" src = "images/Centurion.jpg" alt="Image of a Centurion tank">
+
                             <div class = "carousel-caption d-none d-md-block">
                                 <h5>Centurion</h5>
                             </div>
                         </div>
 
+                        <!--Third image of the carousel-->
                         <div class = "carousel-item">
-                            <img class = "d-block w-100" src = "images/T34.jpg">
+                            <img class = "d-block w-100" src = "images/T34.jpg" alt="Image of a T34 tank">
+
                             <div class = "carousel-caption d-none d-md-block">
                                 <h5>T-34</h5>
                             </div>
                         </div>
-
                     </div>
 
+                    <!--Button to go back to previous image-->
                     <button class = "carousel-control-prev" type = "button" data-bs-target = "#home-carousel" data-bs-slide = "prev">
                         <span class = "carousel-control-prev-icon" aria-hidden = "true"></span>
                         <span class = "visually-hidden">Previous</span>
                     </button>
 
+                    <!--Button to move to next image-->
                     <button class = "carousel-control-next" type = "button" data-bs-target = "#home-carousel" data-bs-slide = "next">
                         <span class = "carousel-control-next-icon" aria-hidden = "true"></span>
                         <span class = "visually-hidden">Next</span>
                     </button>
-
                 </div>
-
             </div>
         </main>
 
         <aside>
+            <!--Title for latest tweets section-->
             <h3>Latest Tweets</h3>
         </aside>
 
-        <footer> 
+        <footer>
+            <!--Copyright notice-->
             <p>Copyright Callum Friel</p>
         </footer>
+
+        <!--The script to login-->
+        <script>
+
+            //Variable "counter" thats set to "2"
+            var counter = 2;
+
+            //Function that will allow the user to either login or logout
+            function login(){
+                if(counter % 2 == 0){
+                    alert('You have been logged in!')
+                }else{
+                    alert('You have been logged out!')
+                }
+
+                //Adds 1 to the counter variable
+                counter += 1;
+            }
+        </script>
     </body>
 </html>
