@@ -95,13 +95,46 @@
 
                 </table>
             </div>
+
+            <p>Want to recomend an event? Tell us below!</p>
+            <form name = "event">
+                <fieldset>
+                    <!--Input box for event title-->
+                    <label for = "message">Event Title:</label>
+                    <textarea name = "event_title" cols = "75" rows = "1"></textarea></br>
+
+                    <!--Input box for date-->
+                    <label for = "message">Event Date:</label>
+                    <textarea name = "event_date" cols = "75" rows = "1"></textarea></br>
+
+                    <button type = "button" onclick = "submit_event()">Submit Event</button>
+
+                    <!--Script to proccess input from form-->
+                    <script>
+                        function submit_event(){
+                            var title = document.forms["event"]["event_title"].value;
+                            var date = document.forms["event"]["event_date"].value;
+
+                            if(title == ""){
+                                alert("An event must have a title!");
+                            }else{
+                                if(date.length == 0){
+                                    alert("An event must have a date!");
+                                }else{
+                                    alert("Event submitted! The society will contact you soon!")
+                                }
+                            }
+                        }
+                    </script>
+                </fieldset>
+            </form>
         </main>
 
         <aside> </aside>
 
         <footer>
             <!--Copyright notice-->
-            <p>Copyright Callum Friel</p>
+            <p>Copyright Callum Friel 2024</p>
         </footer>
     </body>
 </html>
