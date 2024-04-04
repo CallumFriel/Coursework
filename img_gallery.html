@@ -1,4 +1,6 @@
-<html>
+<!DOCTYPE html>
+
+<html lang = "en">
     <head>
         <title>The Tank Society</title>
 
@@ -6,6 +8,7 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
         <link rel = 'stylesheet' href = 'CSS/main.css'>
+        <meta charset="UTF-8">
     </head>
 
     <body>
@@ -36,17 +39,17 @@
 
                     <!--First image of the row-->
                     <div class = "col-sm">
-                        <img src = "Images/Centurion.jpg" alt = "An image of a Centurion tank" class = "container" id = "img-gallery1" onmouseover="highlight(this)" onmouseout="delight(this)" onmouseover="deblur(this)"/>
+                        <img src = "Images/Centurion.jpg" alt = "An image of a Centurion tank" class = "container" onmouseover="highlight(this)" onmouseout="delight(this)" onload = "contrast(this); blur(this)"/>
                     </div>
 
                     <!--Second image of the row-->
                     <div class = "col-sm">
-                        <img src = "Images/Challenger2.jpg" alt = "An image of a Chellenger 2 main battle tank" class = "container" id = "img-gallery1" onmouseover="highlight(this)" onmouseout="delight(this)" onmouseover="deblur(this)"/>
+                        <img src = "Images/Challenger2.jpg" alt = "An image of a Challenger 2 main battle tank" class = "container" onmouseover="highlight(this)" onmouseout="delight(this)" onload = "contrast(this); blur(this)"/>
                     </div>
 
                     <!--Third image of the row-->
                     <div class = "col-sm">
-                        <img src = "Images/Leopard2A5.jpg" alt = "An image of a Leopard 2A5 tank" class = "container" id = "img-gallery1" onmouseover="highlight(this)" onmouseout="delight(this)" onmouseover="deblur(this)"/>
+                        <img src = "Images/Leopard2A5.jpg" alt = "An image of a Leopard 2A5 tank" class = "container" onmouseover="highlight(this)" onmouseout="delight(this)" onload = "contrast(this); blur(this)"/>
                     </div>
                 </div>
 
@@ -55,17 +58,17 @@
 
                     <!--First image of the row-->
                     <div class = "col-sm">
-                        <img src = "Images/M1Abrams.jpg" alt = "An image of an M1 Abrams tank" class = "container" id = "img-gallery1" onmouseover="highlight(this)" onmouseout="delight(this)"/>
+                        <img src = "Images/M1Abrams.jpg" alt = "An image of an M1 Abrams tank" class = "container" onmouseover="highlight(this)" onmouseout="delight(this)" onload = "contrast(this); blur(this)"/>
                     </div>
 
                     <!--Second image of the row-->
                     <div class = "col-sm">
-                        <img src = "Images/M4Sherman.jpg" alt = "An image of an M4 Sherman tank" class = "container" id = "img-gallery1" onmouseover="highlight(this)" onmouseout="delight(this)" onmouseover="deblur(this)"/>
+                        <img src = "Images/M4Sherman.jpg" alt = "An image of an M4 Sherman tank" class = "container" onmouseover="highlight(this)" onmouseout="delight(this)" onload = "contrast(this); blur(this)"/>
                     </div>
 
                     <!--Third image of the row-->
                     <div class = "col-sm">
-                        <img src = "Images/PanzerIV.jpg" alt = "An image of a Panzer IV tank" class = "container" id = "img-gallery1" onmouseover="highlight(this)" onmouseout="delight(this)" onmouseover="deblur(this)"/>
+                        <img src = "Images/PanzerIV.jpg" alt = "An image of a Panzer IV tank" class = "container" onmouseover="highlight(this)" onmouseout="delight(this)" onload = "contrast(this); blur(this)"/>
                     </div>
                 </div>
 
@@ -74,17 +77,17 @@
 
                     <!--First image of the row-->
                     <div class = "col-sm">
-                        <img src = "Images/T34.jpg" alt = "An image of a T-34 tank" class = "container" id = "img-gallery1" onmouseover="highlight(this)" onmouseout="delight(this)"/>
+                        <img src = "Images/T34.jpg" alt = "An image of a T-34 tank" class = "container" onmouseover="highlight(this)" onmouseout="delight(this)" onload = "contrast(this); blur(this)"/>
                     </div>
 
                     <!--Second image of the row-->
                     <div class = "col-sm">
-                        <img src = "Images/T72.jpg" alt = "An image of a T-72 tank" class = "container" id = "img-gallery1" onmouseover="highlight(this)" onmouseout="delight(this)"/>
+                        <img src = "Images/T72.jpg" alt = "An image of a T-72 tank" class = "container" onmouseover="highlight(this)" onmouseout="delight(this)" onload = "contrast(this); blur(this)"/>
                     </div>
 
                     <!--Third image of the row-->
                     <div class = "col-sm">
-                        <img src = "Images/Tiger1.webp" alt = "An image of a Tiger 1 tank" class = "container" id = "img-gallery1" onmouseover="highlight(this)" onmouseout="delight(this)"/>
+                        <img src = "Images/Tiger1.webp" alt = "An image of a Tiger 1 tank" class = "container" onmouseover="highlight(this)" onmouseout="delight(this)" onload = "contrast(this); blur(this)"/>
                     </div>
                 </div>
             </div>
@@ -93,15 +96,20 @@
         <!--Script that will alter images in gallery-->
         <script>
 
+            function contrast(x){
+                x.style = "filter: opacity(50%); filter: blur(5px)"
+            }
+
             //Function that will add border around image when mouse hovers over
             function highlight(x){
-                    x.style = "border: solid blue 2px;"
+                x.style = "border: solid blue 2px; filter: opacity(100%); filter: drop-shadow(8px 8px 10px gray);"
             }
             
             //Function that removes the border when mouse stops hovering over the image
             function delight(x){
-                    x.style = "border: none;"
+                x.style = "border: none; filter: none; filter: opacity(50%)"
             }
+
         </script>
 
         <aside> </aside>

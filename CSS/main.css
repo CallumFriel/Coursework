@@ -159,7 +159,7 @@ input{
 
 /*Styles teh footer of the page*/
 footer{
-    background-color: red;
+    background-color: yellow;
     border-radius: 10px;
     margin: 10px;
 }
@@ -198,10 +198,6 @@ footer{
 /*styles the login area*/
 #login{
     float: right;
-    display: inline;
-}
-
-#articleHeader{
     display: inline;
 }
 

@@ -1,7 +1,10 @@
-<html>
+<!DOCTYPE html>
+
+<html lang = "en">
     <head>
         <title>The Tank Society</title>
         <link rel = 'stylesheet' href = 'CSS/main.css'>
+        <meta charset="UTF-8">
     </head>
 
     <body>
@@ -39,14 +42,14 @@
 
                         <!--Name input-->
                         <label for = "name">Name:</label>
-                        <input type = "text" name = "name" value = ""/> <br/>
+                        <input type = "text" name = "name" id = "name" value = ""/> <br/>
 
                         <!--Email input-->
                         <label for = "email">Email:</label>
-                        <input type = "text" name = "email" value = ""/> <br/>
+                        <input type = "text" name = "email" id = "email" value = ""/> <br/>
 
                         <!--Selection for membership status-->
-                        <label for = "membership">What is your membership status:</label><br/>
+                        <label>What is your membership status:</label><br/>
 
                         <!--Member radio button-->
                         <label for = "member">Member</label>
@@ -58,23 +61,13 @@
 
                         <!--Input box for message-->
                         <label for = "message">Message to send:</label> <br/>
-                        <textarea name = "message" cols = "50" rows = "7"></textarea> <br/>
+                        <textarea name = "message" id = "message" cols = "50" rows = "7"></textarea> <br/>
 
                         <!--File upload-->
-                        <label for = "attachment">Please provide any needed attachments:</label>
+                        <label for = "fileUploaded">Please provide any needed attachments:</label>
                         <input type = "file" id = "fileUploaded" name = "attachment"><br/>
 
                         <button type = "button" onclick = 'send_form("form_outcome", "Form has been sent successfully!")'>Submit</button>
-
-                        <!--Script to proccess input from form-->
-                        <script>
-
-                            //Function to print out a message when the form has been submitted
-                            function send_form(id, content){
-                                var container = document.getElementById(id);
-                                container.innerHTML = content;
-                            }
-                        </script>
                     </fieldset>
                 </form>
 
@@ -86,8 +79,18 @@
 
             <!--Adds a twitter timline to the page-->
             <div id="right-col">
-                <a class="twitter-timeline" data-width="400" data-height="500" data-dnt="true" data-theme="dark" href="https://twitter.com/worldoftanks?ref_src=twsrc%5Etfw">Tweets by worldoftanks</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                <a class="twitter-timeline" data-width="400" data-height="500" data-dnt="true" data-theme="dark" href="https://twitter.com/worldoftanks?ref_src=twsrc%5Etfw">Tweets by worldoftanks</a> <script async src="https://platform.twitter.com/widgets.js"></script>
             </div>
+
+            <!--Script to proccess input from form-->
+            <script>
+
+            //Function to print out a message when the form has been submitted
+            function send_form(id, content){
+                var container = document.getElementById(id);
+                container.innerHTML = content;
+            }
+            </script>
         </main>
 
         <aside> </aside>
