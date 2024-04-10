@@ -95,6 +95,38 @@ nav li:hover{
     background-color: black;
 }
 
+/*Styles the general navigation bar*/
+main ul{
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+/*Stles each box of the navigation bar*/
+main li{
+    border: 2px;
+    border-color: yellow;
+    border-style: solid;
+    background-color: red;
+    list-style-type: none;
+    float: left;
+    width: 20%;
+    padding: 16px;
+}
+
+/*Styles link text*/
+main li a{
+    color: white;
+    text-decoration: none;
+}
+
+/*Styles when mouse is hovering over navigation box*/
+main li:hover{
+    background-color: black;
+}
+
 /*Styles when mouse is not hovering over navigation box*/
 .active{
     background-color: purple;
@@ -162,6 +194,7 @@ footer{
     background-color: yellow;
     border-radius: 10px;
     margin: 10px;
+    max-width: 100%;
 }
 
 /*Styles the row ofthe image gallery*/
@@ -204,4 +237,34 @@ footer{
 #articleImage{
     height: 150px;
     width: 150px;
+}
+
+#reviewAreaBorder{
+    min-width: 100%;
+}
+
+#reviewBorder{
+    border-style: solid;
+    border-color: black;
+}
+
+#review1{
+    min-width: 50%;
+    float: left;
+    border-style: solid;
+    border-color: black;
+}
+
+#review2{
+    min-width: 50%;
+    float: right;
+    display: inline;
+    border-style: solid;
+    border-color: black;
+
+}
+
+#review3{
+    border-style: solid;
+    border-color: black;
 }
