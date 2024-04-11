@@ -34,27 +34,38 @@
         </nav>
 
         <main>
+            <!--Sets up the area where the review things will be-->
             <div class = "container" id = "reviewAreaBorder">
-
                 <div class = "row align-items-start">
 
+                    <!--The area that contains the submitted reviews-->
                     <div class = "col order-1" id = "reviewBorder">
+                        <h3>Past reviews:</h3>
+
+                        <!--Area for the first review-->
                         <div id = "review1">
                             <h3>Review 1</h3>
                             <p>insert review 1 here</p>
                         </div>
+
+                        <!--Area for the second review-->
                         <div id = "review2">
                             <h3>Review 2</h3>
                             <p>insert review 2 here</p>
                         </div>
+
+                        <!--Area for the third review-->
                         <div id = "review3">
                             <h3>Review 3</h3>
                             <p>insert review 3 here</p>
-                        </div>
+                        </div><br>
+
+                        <!--Title and area that contains the review submitted by the user-->
+                        <h3>Your review:</h3>
                         <div id = "review3">
                             <h3 id = "reviewer-name"></h3>
                             <p id = "review-text"></p>
-                        </div>
+                        </div><br>
                     </div>
 
                 
@@ -69,21 +80,24 @@
                                 <label for = "name">Name:</label>
                                 <input type = "text" name = "name" id = "name" value = ""/> <br/>
 
-                                <!--Input box for message-->
+                                <!--Input box for review-->
                                 <label for = "review">Write your review below:</label> <br/>
                                 <textarea name = "review" id = "review" cols = "97" rows = "8"></textarea> <br/>
 
-
+                                <!--Button that submits the review and then runs the functions to put it onto the website-->
                                 <button type = "button" onclick = 'send_name("reviewer-name", document.getElementById("name").value); send_review("review-text", document.getElementById("review").value)'>Submit</button>
                             </fieldset>
                         </form>
 
                         <script>
+
+                            //Function that gets the reviewers name and then puts it into the user review section
                             function send_name(id, content){
                                 var container = document.getElementById(id)
                                 container.innerHTML = content
                             }
 
+                            //Function that gets the reviewers review and then puts it into the user review section
                             function send_review(id, content){
                                 var container = document.getElementById(id)
                                 container.innerHTML = content
