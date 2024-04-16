@@ -235,20 +235,24 @@ footer{
     display: inline;
 }
 
+/*sets the width and height for the image in the article*/
 #articleImage{
     height: 150px;
     width: 150px;
 }
 
+/*sets a minimum width for the general review area*/
 #reviewArea{
     min-width: 100%;
 }
 
+/*Creates a border for each column*/
 #reviewBorder{
     border-style: solid;
     border-color: black;
 }
 
+/*creates a border, sets the width and also makes it show to the left for the first review*/
 #review1{
     min-width: 50%;
     float: left;
@@ -256,6 +260,7 @@ footer{
     border-color: black;
 }
 
+/*creates a border, sets the width and also makes it show to the right for the second review*/
 #review2{
     min-width: 50%;
     float: right;
@@ -265,6 +270,7 @@ footer{
 
 }
 
+/*creates a border for the third review, the user inputted one*/
 #review3{
     border-style: solid;
     border-color: black;

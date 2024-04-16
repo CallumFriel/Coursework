@@ -1,12 +1,31 @@
+<!--
+    Threat Model
+
+    Threat Source: External
+    Threat Agent: Human
+    Threat Intention: Intentional
+    Threat Motivation: Embarressment of society
+    Threat Impact: Defacement of society website, changing external website links to bad ones, replacing videos
+    Threat Mitigation: Login validation, only allow admins right to change links and videos, 2FA for login, send email conformation
+-->
+
+<!--References to external material used located in README.md file-->
+
+<!--Sets the doc type-->
 <!DOCTYPE html>
 
+<!--Sets the language for the page-->
 <html lang = "en">
     <head>
+
+        <!--Sets the title for the webpage-->
         <title>The Tank Society</title>
 
+        <!--Links up the webpage with bootstrapper to allow for formatting of website-->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
         
+        <!--Links the page with a CSS file for styling the page-->
         <link rel = 'stylesheet' href = 'CSS/main.css'>
         <meta charset="UTF-8">
     </head>
@@ -15,7 +34,7 @@
         <header>
 
             <!--The website logo and title-->
-            <img id="logo" src = "Images/logo.webp" alt = "The logo of the site which is a silhoutte of a tank"/>
+            <img id="logo" src = "Images/logo.png" alt = "The logo of the site which is a silhoutte of a tank"/>
             <h1 id="header">The Tank Society</h1>
 
         </header>
@@ -37,7 +56,7 @@
 
             <!--Gives a heading and starts up the area for the updates-->
             <h1>Current updates in the gaming world:</h1>
-            <div class = "container" id = "reviewAreaBorder">
+            <div class = "container" id = "reviewArea">
 
                 <div class = "row align-items-start">
 
@@ -99,9 +118,34 @@
                             <iframe width="560" height="315" src="https://www.youtube.com/embed/hBqBmXquTOs?si=rzb4xQrNIqS1Wd8a" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                         </div>
                     </div>
-                    
                 </div>
             </div>
+
+            <!--Sets up a button to reveal the easter egg-->
+            <button id = "videoRevealButton" class = "video1" onclick = "revealVideo()">Show The Easter Egg</button>
+
+
+            <!--Div that will contain the video-->
+            <div id = "videoDiv">
+
+                <!--Empty video tag thats waiting for the video to show-->
+                <video></video>>
+            </div>
+
+            <!--Script that will show the video-->
+            <script>
+
+                //sets a pair of variable that will both equal what ever the element is by ID
+                var revealVideoButton = document.getElementById("videoRevealButton");
+                var divForVideo = document.getElementById("videoDiv");
+
+                //Function that will change the video tags in the previous div to now have the video be shown
+                function revealVideo(){
+                    divForVideo.innerHTML = '<video id = "video" width = "300px" preload = "auto" type = "video/mp4" src = "Videos/WoT - Easter Egg Video.mp4" controls></video>';
+
+                }
+                
+            </script>
         </main>
 
         <aside></aside>

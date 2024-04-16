@@ -9,8 +9,12 @@
     Threat Mitigation: User review input validation, 2FA validation for loging in
 -->
 
+<!--References to external material used located in README.md file-->
+
+<!--Sets the doc type-->
 <!DOCTYPE html>
 
+<!--Sets the language for the page-->
 <html lang = "en">
     <head>
 
@@ -21,6 +25,7 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
         
+        <!--Links the page with a CSS file for styling the page-->
         <link rel = 'stylesheet' href = 'CSS/main.css'>
         <meta charset="UTF-8">
     </head>
@@ -29,7 +34,7 @@
         <header>
 
             <!--The website logo and title-->
-            <img id="logo" src = "Images/logo.webp" alt = "The logo of the site which is a silhoutte of a tank"/>
+            <img id="logo" src = "Images/logo.png" alt = "The logo of the site which is a silhoutte of a tank"/>
             <h1 id="header">The Tank Society</h1>
             
         </header>
@@ -58,20 +63,20 @@
 
                         <!--Area for the first review-->
                         <div id = "review1">
-                            <h3>Review 1</h3>
-                            <p>insert review 1 here</p>
+                            <h3>Andy</h3>
+                            <p>Totally worth the time and money!</p><br>
                         </div>
 
                         <!--Area for the second review-->
                         <div id = "review2">
-                            <h3>Review 2</h3>
-                            <p>insert review 2 here</p>
+                            <h3>Philip</h3>
+                            <p>Highly recomend if you like tanks!</p><br>
                         </div>
 
                         <!--Area for the third review-->
                         <div id = "review3">
-                            <h3>Review 3</h3>
-                            <p>insert review 3 here</p>
+                            <h3>Sarah</h3>
+                            <p>It absolutely is worth it to join! Learned alot!</p>
                         </div><br>
 
                         <!--Title and area that contains the review submitted by the user-->
@@ -116,22 +121,31 @@
                                 var review = document.getElementById(id)
                                 review.innerHTML = content
                             }
-
+                            
+                            //Function that loads a ding sound and plays it when called
                             function play_sound(){
                                 var sound = new Audio("ding-126626.mp3");
                                 sound.play();
                                 sound.currentTime = 0;
                             }
-                            
+
+                            //Function that will verify if all inputs have data inside of them
                             function submit_event(nameID, nameContent, reviewID, reviewContent){
+
+                                //Initialises the variables "userName" and "userReview" and gives it a value equal to whats in the forms inputs
                                 var userName = document.forms["reviewForm"]["name"].value;
                                 var userReview = document.forms["reviewForm"]["review"].value;
 
+                                //Checks if the variable "userName" is empty and if so, throws an alaert telling the user that the input is empty
                                 if(userName == ""){
                                     alert("You must input a name for the review!");
                                 }else{
+
+                                    //Checks if the variable "userReview" is empty and if so, throws an alaert telling the user that the input is empty
                                     if(userReview.length == 0){
                                         alert("You left the review input empty! Please input a review!");
+
+                                    //If everything has a value then it will call the functions "send_name", "send_review" and "play_sound" and pass corresponding values
                                     }else{
                                         send_name(nameID, nameContent)
                                         send_review(reviewID, reviewContent)
